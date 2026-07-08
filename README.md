@@ -24,3 +24,15 @@ graph TD
     E -->|No| H[Discard / Log]
     F -->|Full Alpha & Contract| I((Telegram Channel))
     G -->|FOMO Teaser & Link| J((X Profile -> Telegram))
+```
+
+## 🌟 Core Features
+
+- 🔍 **Automated Alpha Discovery:** Continuously polls decentralized exchange APIs (GeckoTerminal) for newly launched Solana liquidity pools.
+- 🛡️ **Real-Time Smart Contract Auditing:** Connects directly to the Solana Mainnet RPC to inspect SPL Token metadata. Automatically detects malicious vectors like Mint Authority (infinite printing) and Freeze Authority (honeypots).
+- 📊 **Dynamic Filtering:** Discards low-liquidity and low-volume "garbage" tokens, ensuring only high-conviction plays are broadcasted.
+- 📡 **Cross-Platform Traffic Engine:**
+  - **Telegram:** Instantly broadcasts the full contract address, audit score, and DexScreener links to a dedicated channel.
+  - **X (Twitter):** Automatically posts optimized "Teaser" tweets designed to create FOMO and drive external traffic to the Telegram funnel.
+  - **Discord:** Broadcasts promotional messages to multiple Discord servers via webhook integration.
+- 🧱 **Modular Architecture:** Built using a strict Service-Oriented Architecture (SOA) in Node.js, making it trivial to add new chains, APIs, or broadcasting platforms without breaking the core logic.
